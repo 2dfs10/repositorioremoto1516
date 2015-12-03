@@ -95,7 +95,7 @@ public class acumular extends HttpServlet {
 			}
 
 			sesionCli.setAttribute("librosesion", productoc);
-			response.setHeader("Refresh", "2;URL=libros.html");
+			response.setHeader("Refresh", "2;URL=index.html");
 
 		} else {
 			// totaliza los libros comprados
@@ -128,7 +128,7 @@ public class acumular extends HttpServlet {
 			SumaValor = 0;
 			sesionCli.invalidate();
 
-			response.setHeader("Refresh", "5;URL=libros.html");
+			response.setHeader("Refresh", "5;URL=index.html");
 
 		}
 	}

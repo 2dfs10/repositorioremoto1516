@@ -20,7 +20,7 @@ aunque esté en mayuscaula en el Bean. Ademas debe de pertenecer a un paquete -->
 	<jsp:useBean id="bean1" class="paquete.Bean2">
 	</jsp:useBean>
 
-	<jsp:setProperty property="nombre" name="bean1" value="manuel" />
+	<jsp:setProperty property="nombre" name="bean1" value=<%request.getParameter("nombre");%> />
 	El valor de la propiedad Nombre es:
 	<br>
 	<jsp:getProperty property="nombre" name="bean1" />
