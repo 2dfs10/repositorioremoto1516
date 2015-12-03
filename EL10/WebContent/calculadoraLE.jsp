@@ -18,6 +18,7 @@ El Resultado de sumar
 <jsp:getProperty property="op1" name="calculadora"/>
 
 Usamos LE -->
+
 ${calculadora.op1};
 
 <br>
