@@ -52,7 +52,7 @@ public class userpassword extends HttpServlet {
 
 			// Establecer la conexión, tenemos cargado el Driver y ahora
 			// establecer la conexion
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/usuario", "root", "");
+			Connection conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/usuarios", "root", "");
 
 			// http://www.javamexico.org/blogs/ezamudio/ejemplo_de_inyeccion_de_sql 
 			// injeccion SQL

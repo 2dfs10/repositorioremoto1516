@@ -33,7 +33,7 @@ public class InsertarEstructurado extends HttpServlet {
 		// TODO Auto-generated method stub
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		String insertodato = "INSERT INTO tutorias_t2 VALUES(null,'Jose Zacarias','Rosa Maria','Lunes','10:00','Esto es ejemplo de tutopria')";
+		String insertodato = "INSERT INTO tutorias_t2 VALUES('Jose Zacarias','Rosa Maria','Lunes','10:00','Esto es ejemplo de tutopria')";
 
 		// Creamos una sentencia a partir de la conexión
 

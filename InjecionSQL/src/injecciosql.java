@@ -46,8 +46,7 @@ public class injecciosql extends HttpServlet {
 			
 			response.setContentType("text/html");
 			PrintWriter out = response.getWriter();
-			// System.out.println("sdlñvksdñvlmksdlñmv");
-			String vnombre = request.getParameter("alum");
+		 	String vnombre = request.getParameter("alum");
 		 
 			
 			// Leer el driver específico de la base de datos que vamos a
@@ -58,26 +57,11 @@ public class injecciosql extends HttpServlet {
 			// establecer la conexion
 			Connection conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/usuarios", "root", "");
 
-			// escribo la cadena SQL los campos se pueden recoger del formulario
-
-			// String consulta = "INSERT INTO tutorias_t2
-			// VALUES('"+alumno+"','"+profesor+"','"+dia+"','"+hora+"','"+asunto+"')";
-
-			// null si tengo campo con autoincremento
-			// String consulta = "INSERT INTO tutorias_t2
-			// VALUES(null,'"+alumno+"','"+profesor+"','"+dia+"','"+hora+"','"+asunto+"')";
-
-			
-			/*String consulta = "SELECT * FROM `tutorias_t2` WHERE alumno='ivan' and profesor ='pepe'"; */
-		//	WHERE p.profesor = '"+profesor+"'";
+			 
 			
 			String consulta = "select * From usuario where nombre = '"+vnombre+"'";;
 			
-			// la injecion se produce por argumento poniendo en el formulario
-			// SELECT * FROM usuario WHERE nombre = "Alicia'; DROP TABLE usuario; SELECT * FROM usuario WHERE nombre LIKE '%"	
-
-			// Creamos una sentencia a partir de la conexión
-
+		 
 			sentencia = conexion.createStatement();
 			
 			//Ejecutamos la orden SQL

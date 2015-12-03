@@ -45,11 +45,11 @@ public class Conecta extends HttpServlet {
 		try {
 			// Leer el driver específico de la base de datos que vamos a
 			// utilizar, en nuestro caso, será:
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			Class.forName("controlador").newInstance();
 
 			// Establecer la conexión, tenemos cargado el Driver y ahora
 			// establecer la conexion
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/tutorias", "root", "");
+			Connection conexion = DriverManager.getConnection("db", "usuario", "contraseña");
 			sentencia = conexion.createStatement();
 
 		} catch (InstantiationException e) { // excepcion de linea 1 del
@@ -76,28 +76,6 @@ public class Conecta extends HttpServlet {
 	}
 
 	
-	public Connection getConexion() {
-		return conexion;
-	}
 	
-	
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	/*
-	 * protected void doGet(HttpServletRequest request, HttpServletResponse
-	 * response) throws ServletException, IOException { // TODO Auto-generated
-	 * method stub // response.getWriter().append("Served at: "
-	 * ).append(request.getContextPath()); }
-	 * 
-	 *//**
-		 * @see HttpServlet#doPost(HttpServletRequest request,
-		 *      HttpServletResponse response)
-		 *//*
-		 * protected void doPost(HttpServletRequest request, HttpServletResponse
-		 * response) throws ServletException, IOException { // TODO
-		 * Auto-generated method stub doGet(request, response); }
-		 */
 
 }

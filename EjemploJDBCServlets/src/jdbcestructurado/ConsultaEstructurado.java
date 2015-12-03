@@ -46,7 +46,7 @@ public class ConsultaEstructurado extends HttpServlet {
 		// ejecutamos orden
 		try {
 			resultados = conexion.getSentencia().executeQuery(consulta);
-		
+
 			if (resultados.isBeforeFirst()) {
 
 				// hay algun record
