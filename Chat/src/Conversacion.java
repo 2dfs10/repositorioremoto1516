@@ -2,7 +2,7 @@
 
 public class Conversacion
 {
-  private static final int NMENSAJES = 12;
+  private static final int NMENSAJES = 50;
   private static String[] conversación = new String[NMENSAJES];
   
   static
