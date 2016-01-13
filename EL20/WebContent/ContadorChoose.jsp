@@ -8,7 +8,7 @@
 <title>Pagina Contadort JSP usando taglib standard</title>
 </head>
 <body>
-
+	
 	<c:set var="atrCuenta" scope="application" value="${atrCuenta+1}">
 	</c:set>
 	${param.Nombre}, has visitado es página
