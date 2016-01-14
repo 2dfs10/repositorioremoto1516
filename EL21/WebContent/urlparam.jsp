@@ -10,11 +10,22 @@
     </head>
     <body>
         Click en el enlace para enviar el parametro :
-        <a href="
+    
+        
+        	
+        
+     
+        
+        
+        
+      <%--   <a href="
            <c:url value="nuevaJSP.jsp">
                <c:param name="nombre" value="Juan"/>
            </c:url>
-           ">link</a>
+           ">link</a> --%>
+           
+           
+           
            
            
     </body>
