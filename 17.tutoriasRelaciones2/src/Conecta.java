@@ -11,7 +11,7 @@ public class Conecta {
 	private final String contraseña = "";
 	private Connection conexion;
 	private Statement sentencia;
-	
+	// cONEXION
 	public Conecta() {
 		
 		
