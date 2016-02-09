@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
-
+// LINEA DESDE EL REMOTO
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -35,11 +35,11 @@ public class Borrar extends HttpServlet {
 					if(conexion.getSentencia().executeUpdate(consulta) != 0) {
 					conexion.getSentencia().executeUpdate(consulta);
 					
-					mensaje = "<table border='1' id='mitabla'><tr><td>Tutoria " + id + " borrada con éxito!!!</td></tr></table>";
+					mensaje = "<table border='1' id='mitabla'><tr><td>Tutoria " + id + " borrada con Ã©xito!!!</td></tr></table>";
 					}
 					else {
 						
-						mensaje = "<table border='1' id='mitabla'><tr><td>Tutoría no existe!!!</td></tr></table>";
+						mensaje = "<table border='1' id='mitabla'><tr><td>TutorÃ­a no existe!!!</td></tr></table>";
 						
 					}
 					
