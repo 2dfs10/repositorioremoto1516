@@ -2,7 +2,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-//LINEA
+//LINEA 222
 
 public class Conecta {
 	private final String controlador = "com.mysql.jdbc.Driver";
