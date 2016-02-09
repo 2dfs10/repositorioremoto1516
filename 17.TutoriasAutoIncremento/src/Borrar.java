@@ -17,6 +17,7 @@ public class Borrar extends HttpServlet {
     
     public Borrar() {
         super();
+        //LINEA AÑADIDA
        
     }
 
