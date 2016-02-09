@@ -1,6 +1,6 @@
 package ejercicio1;
 
-
+// eJERCICIO 1
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -72,16 +72,16 @@ public class ejercicio1 extends HttpServlet {
 
 			
 			String section = "<section>" + 
-					"<h3>" + nombre + ", en tus ratos libre ¿qué te gusta más hacer?</h3>" +
+					"<h3>" + nombre + ", en tus ratos libre Â¿quÃ© te gusta mÃ¡s hacer?</h3>" +
 					"<div>" +
 					"	<form action='SetCookie' method='get'>" +
 					"		<input type='hidden' name='nombre' value='" + nombre + "'/>" +
 					"		<input type='radio' name='gustos' value='libros' checked='checked'/>" +
 					"		<label>Leer libros</label>" +
 					"		<input type='radio' name='gustos' value='musica'/>" +
-					"		<label>Escuchar música</label>" +
+					"		<label>Escuchar mÃºsica</label>" +
 					"		<input type='radio' name='gustos' value='peliculas'/>" +
-					"		<label>Ver películas</label>" +
+					"		<label>Ver pelÃ­culas</label>" +
 					"		<br />" +
 					"		<input type='submit' name='submit' value='Entrar'/>" +
 					"	</form>" +
