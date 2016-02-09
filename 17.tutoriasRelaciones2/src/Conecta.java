@@ -2,13 +2,13 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-
+//LINEA
 
 public class Conecta {
 	private final String controlador = "com.mysql.jdbc.Driver";
 	private final String db = "jdbc:mysql://127.0.0.1:3306/bd_tutorias";
 	private final String usuario = "root";
-	private final String contraseña = "";
+	private final String contraseÃ±a = "";
 	private Connection conexion;
 	private Statement sentencia;
 	
@@ -17,9 +17,9 @@ public class Conecta {
 		
 		try {
 			Class.forName(controlador).newInstance();
-			conexion = DriverManager.getConnection(db, usuario, contraseña);
+			conexion = DriverManager.getConnection(db, usuario, contraseÃ±a);
 			sentencia = conexion.createStatement();
-			System.out.println("Conexión realizada con éxito");
+			System.out.println("ConexiÃ³n realizada con Ã©xito");
 			
 			
 		} catch (InstantiationException e) { //excepcion de linea 1 del tray(instancia)
