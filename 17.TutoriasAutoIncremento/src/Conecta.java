@@ -8,7 +8,7 @@ public class Conecta {
 	private final String controlador = "com.mysql.jdbc.Driver";
 	private final String db = "jdbc:mysql://127.0.0.1:3306/tutorias";
 	private final String usuario = "root";
-	private final String contraseña = "";
+	private final String contrase�a = "";
 	private Connection conexion;
 	private Statement sentencia;
 	
@@ -17,7 +17,7 @@ public class Conecta {
 		
 		try {
 			Class.forName(controlador).newInstance();
-			conexion = DriverManager.getConnection(db, usuario, contraseña);
+			conexion = DriverManager.getConnection(db, usuario, contrase�a);
 			sentencia = conexion.createStatement();
 			System.out.println("Conexión realizada con éxito");
 			
